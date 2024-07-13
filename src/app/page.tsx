@@ -127,6 +127,13 @@ export default async function Home() {
 									))}
 								</ul>
 							</div>
+							<div className="flex flex-wrap gap-2 pt-1">
+								{exp.technologies.map((tech) => (
+									<Badge key={tech} variant="secondary">
+										{tech}
+									</Badge>
+								))}
+							</div>
 						</div>
 					))}
 				</div>

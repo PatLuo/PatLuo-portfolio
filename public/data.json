@@ -81,12 +81,20 @@
 	"workExperience": [
 		{
 			"id": "1",
-			"company": "Tech Corp",
-			"companyWebsite": "https://example.com",
-			"role": "Senior Full Stack Developer",
-			"startDate": "Jan 2020",
-			"endDate": "Present",
-			"technologies": ["Socket.io", "Node.js", "Express", "React"],
+			"company": "Nokia",
+			"companyWebsite": "https://www.nokia.com/",
+			"role": "Software Developer in Test",
+			"startDate": "Sep 2022",
+			"endDate": "Dec 2022 (Co-op)",
+			"technologies": [
+				"Python",
+				"Robot Framework",
+				"Selenium",
+				"Gitlab CI/CD",
+				"Docker",
+				"Kubernetes",
+				"Azure"
+			],
 			"keyResponsibilities": [
 				"Led a team of developers to create scalable web applications.",
 				"Implemented RESTful and GraphQL APIs using Node.js and Express.",
@@ -97,12 +105,19 @@
 		},
 		{
 			"id": "2",
-			"company": "Web Solutions",
-			"companyWebsite": "https://example.com",
+			"company": "FINTRAC",
+			"companyWebsite": "https://fintrac-canafe.canada.ca/intro-eng",
 			"role": "Full Stack Developer",
-			"startDate": "Jun 2017",
-			"endDate": "Dec 2019",
-			"technologies": ["MongoDB", "Express", "React", "Node.js"],
+			"startDate": "May 2022",
+			"endDate": "Aug 2022 (Co-op)",
+			"technologies": [
+				"Typescript",
+				"Vue.js",
+				"Express.js",
+				"Oracle SQL",
+				"Vite",
+				"Cypress"
+			],
 			"keyResponsibilities": [
 				"Designed and developed web applications using JavaScript and React.",
 				"Built and maintained server-side APIs with Node.js and Express.",
