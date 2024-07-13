@@ -15,10 +15,6 @@
 					"path": "#education"
 				},
 				{
-					"label": "Testimonials",
-					"path": "#testimonials"
-				},
-				{
 					"label": "Blogs",
 					"path": "#blogs"
 				}
@@ -29,8 +25,7 @@
 				"banner": true,
 				"experience": true,
 				"project": true,
-				"education": true,
-				"testimonial": true
+				"education": true
 			}
 		}
 	},
@@ -120,37 +115,12 @@
 	"education": [
 		{
 			"id": "1",
-			"institution": "Coursera",
-			"degree": "Full Stack Web Development with React",
-			"description": "Completed a Coursera specialization that focused on building full-stack web applications using React, Node.js, Express, and MongoDB. Learned best practices for designing and implementing responsive, scalable, and secure web applications.",
-			"startDate": "Sep 2013",
-			"endDate": "May 2017"
-		},
-		{
-			"id": "2",
-			"institution": "University of California, Berkeley",
-			"degree": "Bachelor of Science in Computer Science",
-			"description": "Completed a comprehensive curriculum in computer science, including courses in data structures, algorithms, software engineering, and artificial intelligence. Worked on several projects, including a web application for managing student organizations and a mobile app for tracking fitness activities.",
-			"startDate": "Sep 2013",
-			"endDate": "May 2017"
-		}
-	],
-	"testimonials": [
-		{
-			"id": "1",
-			"name": "Jane Smith",
-			"avatar": "/assets/testimonial_1_avatar.jpg",
-			"title": "Project Manager",
-			"company": "Tech Solutions Inc.",
-			"feedback": "John is a fantastic developer who consistently delivers high-quality work. His ability to solve complex problems is impressive."
-		},
-		{
-			"id": "2",
-			"name": "Mike Johnson",
-			"avatar": "/assets/testimonial_2_avatar.jpg",
-			"title": "CEO",
-			"company": "Web Innovators LLC",
-			"feedback": "John is a highly skilled developer who brings a lot of value to our projects. His expertise in full stack development is top-notch."
+			"institution": "University of Ottawa",
+			"degree": "Bachelor of Science in Biomedical Science",
+			"courses": "Relevant Courses: Data Structures & Algorithms, java OOP, Databases, Software Construction, UI analysis and design.",
+			"description": "Although my degree was in biomedical scienes, my last year was all electives so I used this opportunity to take as many computer science courses as possible!",
+			"startDate": "Sep 2018",
+			"endDate": "May 2023"
 		}
 	]
 }
