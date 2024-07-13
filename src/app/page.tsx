@@ -37,13 +37,15 @@ export default async function Home() {
 				<div className="flex flex-col lg:flex-row items-center justify-center gap-12">
 					<div className="w-1/2 mx-auto lg:w-1/3">
 						<Image
-							src="/assets/profile.jpg"
+							src="/assets/profile-pic.jpg"
 							width={280}
 							height={280}
 							alt="Developer"
 							className="mx-auto aspect-square overflow-hidden object-cover object-center rounded-full border"
 						/>
 					</div>
+
+					{/* Intro and bio */}
 					<div className="w-full lg:w-2/3 space-y-4">
 						<div className="space-y-2">
 							<h1 className="text-4xl md:text-5xl font-bold tracking-tighter ">
@@ -53,6 +55,8 @@ export default async function Home() {
 						<p className="max-w-[600px] lg:text-lg text-gray-500 dark:text-gray-400">
 							{data.personalInfo.bio}
 						</p>
+
+						{/* Contact links */}
 						<div className="space-x-4">
 							<Link
 								target="_blank"
@@ -61,15 +65,6 @@ export default async function Home() {
 							>
 								<Button variant="secondary" size="icon">
 									<GitHubLogoIcon className="h-4 w-4" />
-								</Button>
-							</Link>
-							<Link
-								target="_blank"
-								href={data.contactInfo.twitter}
-								prefetch={false}
-							>
-								<Button variant="secondary" size="icon">
-									<TwitterLogoIcon className="h-4 w-4" />
 								</Button>
 							</Link>
 
@@ -106,12 +101,13 @@ export default async function Home() {
 						<div key={exp.id} className="grid gap-1 relative">
 							<div className="aspect-square w-3 bg-gray-900 rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-2 dark:bg-gray-50" />
 
+							{/* Role title and company */}
 							<h4 className="text-xl font-medium">
 								{exp.role} @
 								<Link
 									href={exp.companyWebsite}
 									target="_blank"
-									className="ml-2 text-primary"
+									className="ml-2 text-primary underline"
 								>
 									{exp.company}
 								</Link>
@@ -119,14 +115,20 @@ export default async function Home() {
 							<div className="text-gray-500 dark:text-gray-400">
 								{exp.startDate} - {exp.endDate}
 							</div>
+
+							{/* List of responsibilities */}
 							<div className="mt-2">
 								<h6 className="font-medium">Key Responsibilities:</h6>
-								<ul className="text-gray-500 text-sm list-disc pl-4">
+								<ul className="text-gray-700 dark:text-gray-400 text-sm list-disc pl-4">
 									{exp.keyResponsibilities.map((resp) => (
-										<li key={resp}>{resp}</li>
+										<li key={resp} className="pt-1">
+											{resp}
+										</li>
 									))}
 								</ul>
 							</div>
+
+							{/* tech badges */}
 							<div className="flex flex-wrap gap-2 pt-1">
 								{exp.technologies.map((tech) => (
 									<Badge key={tech} variant="secondary">

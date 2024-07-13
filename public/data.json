@@ -30,18 +30,16 @@
 		}
 	},
 	"personalInfo": {
-		"name": "Arif Hossain",
+		"name": "Patrick Luong",
 		"title": "Full Stack Developer",
-		"location": "Dhaka, Bangladesh",
-		"bio": "I am a passionate full-stack developer with a strong background in building modern, scalable web applications. Lets collaborate andbring your ideas to life."
+		"location": "Ottawa, Canada",
+		"bio": "I am a self-driven full-stack developer with a strong background in building modern, scalable web applications. I have a passion for learning new technologies and solving complex problems."
 	},
 	"contactInfo": {
-		"email": "devarifhossain@gmail.com",
-		"phone": "123-456-7890",
-		"linkedin": "https://www.linkedin.com/in/ariflogs/",
-		"github": "https://github.com/ariflogs",
-		"twitter": "https://twitter.com/ariflogs",
-		"website": "https://johndoe.dev"
+		"email": "patrick.luong615@gmail.com",
+		"phone": "613-618-7927",
+		"linkedin": "https://www.linkedin.com/in/patrick-l-a9311822a/",
+		"github": "https://github.com/PatLuo"
 	},
 	"skills": {
 		"languages": ["JavaScript", "Python", "Java", "C++"],
@@ -82,7 +80,7 @@
 		{
 			"id": "1",
 			"company": "Nokia",
-			"companyWebsite": "https://www.nokia.com/",
+			"companyWebsite": "https://www.nokia.com/networks/security-portfolio/netguard/cybersecurity-dome/",
 			"role": "Software Developer in Test",
 			"startDate": "Sep 2022",
 			"endDate": "Dec 2022 (Co-op)",
@@ -96,11 +94,11 @@
 				"Azure"
 			],
 			"keyResponsibilities": [
-				"Led a team of developers to create scalable web applications.",
-				"Implemented RESTful and GraphQL APIs using Node.js and Express.",
-				"Developed front-end applications using React and Next.js.",
-				"Integrated third-party services and APIs to enhance application functionality.",
-				"Mentored junior developers and conducted code reviews."
+				"Contributed to design and development of a robust Python-based test framework(Robot), resulting in 40% reduction in manual effort and faster time to deployment of newly developed features.",
+				"Debugged and configured test stages of CI/CD pipeline to ensure successful deployment of test automation scripts and automatic uploading of test results to Jira.",
+				"Worked closely with developers to identify, troubleshoot, and thoroughly document software defects.",
+				"Containerized test automation scripts using Docker and Kubernetes to ensure consistent test execution across different environments.",
+				"Wrote onboarding documentation for new team members to help them get up to speed with the project."
 			]
 		},
 		{
@@ -115,15 +113,15 @@
 				"Vue.js",
 				"Express.js",
 				"Oracle SQL",
+				"REST API",
 				"Vite",
 				"Cypress"
 			],
 			"keyResponsibilities": [
-				"Designed and developed web applications using JavaScript and React.",
-				"Built and maintained server-side APIs with Node.js and Express.",
-				"Collaborated with cross-functional teams to deliver high-quality products.",
-				"Ensured applications are responsive and performant.",
-				"Participated in Agile ceremonies and contributed to project planning."
+				"Designed and built a full-stack web application that enabled FINTRAC analysts to search through and process transaction reports in a more streamlined manner.",
+				"Improved loading performance of large queries by implementing pagination and database indexing, reducing load times to under 1s compared to 1min+ on existing system.",
+				"Conducted meetings with clients(analysts) to gather requirements and thorougly understand their needs.",
+				"Integrated app into existing FINTRAC microservices architecture using RESTful APIs."
 			]
 		}
 	],
@@ -133,7 +131,7 @@
 			"institution": "University of Ottawa",
 			"degree": "Bachelor of Science in Biomedical Science",
 			"courses": "Relevant Courses: Data Structures & Algorithms, java OOP, Databases, Software Construction, UI analysis and design.",
-			"description": "Although my degree was in biomedical scienes, my last year was all electives so I used this opportunity to take as many computer science courses as possible!",
+			"description": "Although my degree was in biomedical sciences, my last year was all electives so I used this opportunity to take as many computer science courses as possible!",
 			"startDate": "Sep 2018",
 			"endDate": "May 2023"
 		}

@@ -12,26 +12,21 @@ export default async function Navbar() {
 	return (
 		<header className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950">
 			<div className="container max-w-5xl mx-auto flex h-18 items-center justify-between py-2 px-4 md:px-6">
-				<Link href="/" className="flex items-center" prefetch={false}>
-					<Image
-						src="/assets/logo.png"
-						height={60}
-						width={60}
-						alt={"devfolio logo"}
-					/>
+				<Link href="#home" className="text-2xl" prefetch={false}>
+					Pat<span className="text-primary">Luo</span>
 				</Link>
 				<nav className="hidden space-x-4 lg:flex">
 					{data.visual.navbar.links.map((item) => (
 						<Link
 							href={item.path}
 							key={item.path}
-							className="text-sm transition-colors text-gray-800 hover:text-primary dark:hover:text-gray-50"
+							className="text-sm transition-colors  hover:text-primary dark:hover:text-gray-500"
 						>
 							{item.label}
 						</Link>
 					))}
-					<ModeToggle />
 				</nav>
+
 				<Sheet>
 					<SheetTrigger asChild>
 						<Button variant="outline" size="icon" className="lg:hidden">
@@ -39,13 +34,13 @@ export default async function Navbar() {
 							<span className="sr-only">Toggle navigation menu</span>
 						</Button>
 					</SheetTrigger>
-					<SheetContent side="right">
+					<SheetContent side="right" className="w-[250px]">
 						<div className="grid gap-6 p-6">
 							{data.visual.navbar.links.map((item) => (
 								<Link
 									href={item.path}
 									key={item.path}
-									className="text-sm transition-colors text-gray-800 hover:text-primary dark:hover:text-gray-50"
+									className="text-sm transition-colors hover:text-primary dark:hover:text-gray-500"
 								>
 									{item.label}
 								</Link>
@@ -53,6 +48,7 @@ export default async function Navbar() {
 						</div>
 					</SheetContent>
 				</Sheet>
+				<ModeToggle />
 			</div>
 		</header>
 	);
