@@ -10,7 +10,7 @@ export default async function Navbar() {
 	const data = await getJSONData();
 
 	return (
-		<header className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950">
+		<header className="fixed top-0 z-50 w-full bg-lime-100 shadow-sm dark:bg-black">
 			<div className="container max-w-5xl mx-auto flex h-18 items-center justify-between py-2 px-4 md:px-6">
 				<Link href="#home" className="text-2xl" prefetch={false}>
 					Pat<span className="text-primary">Luo</span>

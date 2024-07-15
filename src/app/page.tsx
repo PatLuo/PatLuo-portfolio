@@ -15,13 +15,11 @@ import {
 	EnvelopeClosedIcon,
 	GitHubLogoIcon,
 	LinkedInLogoIcon,
-	TwitterLogoIcon,
 	GlobeIcon,
 } from "@radix-ui/react-icons";
-import { Avatar } from "@/components/ui/avatar";
 import Image from "next/image";
 
-export const revalidate = 1;
+export const revalidate = 0;
 
 export default async function Home() {
 	const data = await getJSONData();
@@ -37,7 +35,7 @@ export default async function Home() {
 				<div className="flex flex-col lg:flex-row items-center justify-center gap-12">
 					<div className="w-1/2 mx-auto lg:w-1/3">
 						<Image
-							src="/assets/profile-pic.jpg"
+							src="/assets/profile-pic.png"
 							width={280}
 							height={280}
 							alt="Developer"
@@ -49,7 +47,7 @@ export default async function Home() {
 					<div className="w-full lg:w-2/3 space-y-4">
 						<div className="space-y-2">
 							<h1 className="text-4xl md:text-5xl font-bold tracking-tighter ">
-								Hey 👋, I&apos;m {data.personalInfo.name}
+								Hi, I&apos;m {data.personalInfo.name}
 							</h1>
 						</div>
 						<p className="max-w-[600px] lg:text-lg text-gray-500 dark:text-gray-400">
@@ -150,13 +148,13 @@ export default async function Home() {
 				<div className="grid grid-cols-1 gap-4 lg:gap-6">
 					{data.projects.map((project) => (
 						<Card key={project.title} className="flex flex-col lg:flex-row">
-							<div className="w-full lg:w-1/3 p-2 flex items-center">
+							<div className="w-full lg:w-1/3 flex items-center">
 								<Image
 									src={project.cover}
 									alt="Project 1"
 									height={200}
 									width={300}
-									className="rounded-md object-cover"
+									className="rounded-md object-cover ml-6 md:mt-6 lg:mt-0"
 								/>
 							</div>
 
