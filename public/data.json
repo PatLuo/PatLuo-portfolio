@@ -47,35 +47,7 @@
 		"databases": ["MySQL", "MongoDB", "PostgreSQL"],
 		"tools": ["Git", "Docker", "Kubernetes", "Jenkins", "AWS", "GCP"]
 	},
-	"projects": [
-		{
-			"id": "1",
-			"title": "Ride",
-			"description": "A project goal tracking tool for professionals. It let's you create project, assign goals and generate analytics to track progress",
-			"technologies": ["Typescript", "Next.js", "TailwindCSS", "MySQL"],
-			"live_url": "https://makerstracker.com",
-			"code_repo_url": "https://makerstracker.com",
-			"cover": "/assets/project_1.jpeg"
-		},
-		{
-			"id": "2",
-			"title": "Pricing Bees",
-			"description": "A no-code pricing page builder. Build professional-looking pricing pages, customize looks, and get detailed analytics to optimize your pricing strategy.",
-			"technologies": ["Typescript", "Next.js", "Shadcn/ui", "Convex"],
-			"live_url": "https://pricingbees.com",
-			"code_repo_url": "https://pricingbees.com",
-			"cover": "/assets/project_2.jpeg"
-		},
-		{
-			"id": "3",
-			"title": "Indie Hustles",
-			"description": "A listing site for Indie hackers to promote their products",
-			"technologies": ["Typescript", "Next.js", "TailwindCSS", "Airtable"],
-			"live_url": "https://indiehustles.com",
-			"code_repo_url": "https://indiehustles.com",
-			"cover": "/assets/project_3.jpeg"
-		}
-	],
+
 	"workExperience": [
 		{
 			"id": "1",
@@ -88,14 +60,15 @@
 				"Python",
 				"Robot Framework",
 				"Selenium",
+				"Playwright",
 				"Gitlab CI/CD",
 				"Docker",
 				"Kubernetes",
 				"Azure"
 			],
 			"keyResponsibilities": [
-				"Contributed to design and development of a robust Python-based test framework(Robot), resulting in 40% reduction in manual effort and faster time to deployment of newly developed features.",
-				"Debugged and configured test stages of CI/CD pipeline to ensure successful deployment of test automation scripts and automatic uploading of test results to Jira.",
+				"Contributed to design and development of a robust Python-based test framework(Robot), reducing manual testing effort by 40%.",
+				"Debugged and configured test stages of CI/CD pipeline, ensuring successful deployment of test automation scripts and automatic uploading of test results to Jira.",
 				"Worked closely with developers to identify, troubleshoot, and thoroughly document software defects.",
 				"Containerized test automation scripts using Docker and Kubernetes to ensure consistent test execution across different environments.",
 				"Wrote onboarding documentation for new team members to help them get up to speed with the project."
@@ -125,6 +98,28 @@
 			]
 		}
 	],
+
+	"projects": [
+		{
+			"id": "1",
+			"title": "Ride Mapper",
+			"description": "A web application that maps out all of a users bike rides from the Strava API onto an interactive map for easy viewing and sharing.",
+			"technologies": ["Javascript", "React.js", "Leaflet", "Strava API"],
+			"live_url": "https://ride-mapper-54452.web.app/",
+			"code_repo_url": "https://github.com/PatLuo/ride-mapper",
+			"cover": "/assets/ride-mapper.png"
+		},
+		{
+			"id": "2",
+			"title": "My Blog",
+			"description": "A personal blog site where I write about my experiences and ideas usually relating to technology and software development.",
+			"technologies": ["Typescript", "Next.js", "Headless CMS", "Tailwind"],
+			"live_url": "https://pricingbees.com",
+			"code_repo_url": "https://pricingbees.com",
+			"cover": "/assets/project_2.jpeg"
+		}
+	],
+
 	"education": [
 		{
 			"id": "1",
