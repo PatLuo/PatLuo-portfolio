@@ -4,19 +4,19 @@
 			"links": [
 				{
 					"label": "Experience",
-					"path": "#experience"
+					"path": "/#experience"
 				},
 				{
 					"label": "Projects",
-					"path": "#projects"
+					"path": "/#projects"
 				},
 				{
 					"label": "Education",
-					"path": "#education"
+					"path": "/#education"
 				},
 				{
-					"label": "Blogs",
-					"path": "#blogs"
+					"label": "Blog",
+					"path": "/blog"
 				}
 			]
 		},
@@ -116,7 +116,7 @@
 			"technologies": ["Typescript", "Next.js", "Headless CMS", "Tailwind"],
 			"live_url": "https://pricingbees.com",
 			"code_repo_url": "https://pricingbees.com",
-			"cover": "/assets/project_2.jpeg"
+			"cover": "/assets/ride-mapper.png"
 		}
 	],
 

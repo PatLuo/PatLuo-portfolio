@@ -9,13 +9,14 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { getBlogPosts, getJSONData } from "@/lib/serverUtils";
+import { getJSONData } from "@/lib/serverUtils";
 import Link from "next/link";
 import {
 	EnvelopeClosedIcon,
 	GitHubLogoIcon,
 	LinkedInLogoIcon,
 	GlobeIcon,
+	ExternalLinkIcon,
 } from "@radix-ui/react-icons";
 import Image from "next/image";
 
@@ -23,7 +24,6 @@ export const revalidate = 0;
 
 export default async function Home() {
 	const data = await getJSONData();
-	const posts = await getBlogPosts();
 
 	return (
 		<main>
@@ -56,6 +56,12 @@ export default async function Home() {
 
 						{/* Contact links */}
 						<div className="space-x-4">
+							<Button asChild className="text-md pt-3">
+								<Link href="/blog">
+									Visit My Blog
+									<ExternalLinkIcon className="h-4 w-4 ml-1 " />
+								</Link>
+							</Button>
 							<Link
 								target="_blank"
 								href={data.contactInfo.github}
@@ -221,28 +227,6 @@ export default async function Home() {
 							<p className="mt-2 text-md">{ed.courses}</p>
 							<p className="mt-2 text-sm text-gray-500">{ed.description}</p>
 						</div>
-					))}
-				</div>
-			</section>
-
-			{/* Blogs Section */}
-			<section
-				id="blogs"
-				className="container max-w-5xl mx-auto py-12 md:py-16 lg:py-20"
-			>
-				<h2 className="font-bold text-3xl md:text-5xl mb-12">Blogs</h2>
-
-				<div className="space-y-6">
-					{posts.map((post) => (
-						<Link key={post.slug} href={`/blogs/${post.slug}`}>
-							<h3 className="text-xl md:text-3xl font-semibold">
-								{post.title}
-							</h3>
-							<p className="md:text-lg font-light">{post.description}</p>
-							<p className="text-sm font-medium text-gray-500 mt-2">
-								Published at: {post.publishDate}
-							</p>
-						</Link>
 					))}
 				</div>
 			</section>
