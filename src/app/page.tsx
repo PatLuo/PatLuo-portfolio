@@ -56,19 +56,22 @@ export default async function Home() {
 
 						{/* Contact links */}
 						<div className="space-x-4">
-							<Button asChild className="text-md pt-3">
-								<Link href="/blog">
-									Visit My Blog
-									<ExternalLinkIcon className="h-4 w-4 ml-1 " />
-								</Link>
-							</Button>
+							<Link href="/blog">
+								<Button asChild className="pb-1">
+									<div>
+										<p>Visit My Blog</p>
+										<ExternalLinkIcon className="h-4 w-4 ml-1 " />
+									</div>
+								</Button>
+							</Link>
+
 							<Link
 								target="_blank"
 								href={data.contactInfo.github}
 								prefetch={false}
 							>
 								<Button variant="secondary" size="icon">
-									<GitHubLogoIcon className="h-4 w-4" />
+									<GitHubLogoIcon className="h-4 w-4 " />
 								</Button>
 							</Link>
 
@@ -133,7 +136,7 @@ export default async function Home() {
 							</div>
 
 							{/* tech badges */}
-							<div className="flex flex-wrap gap-2 pt-1">
+							<div className="flex flex-wrap gap-2 pt-3">
 								{exp.technologies.map((tech) => (
 									<Badge key={tech} variant="secondary">
 										{tech}
@@ -153,21 +156,21 @@ export default async function Home() {
 				<h2 className="font-bold text-3xl md:text-5xl mb-12">My Projects</h2>
 				<div className="grid grid-cols-1 gap-4 lg:gap-6">
 					{data.projects.map((project) => (
-						<Card key={project.title} className="flex flex-col lg:flex-row">
-							<div className="w-full lg:w-1/3 flex items-center">
+						<Card key={project.title} className="flex flex-col lg:flex-row ">
+							<div className="w-full lg:w-1/3 flex items-center mr-2 ">
 								<Image
 									src={project.cover}
 									alt="Project 1"
 									height={200}
 									width={300}
-									className="rounded-md object-cover ml-6 md:mt-6 lg:mt-0"
+									className="rounded-md object-cover ml-6 mt-6 lg:mt-0 "
 								/>
 							</div>
 
 							<div className="w-full lg:w-2/3">
 								<CardHeader>
 									<CardTitle>{project.title}</CardTitle>
-									<div className="flex flex-wrap gap-2">
+									<div className="flex flex-wrap pt-4 gap-2">
 										{project.technologies.map((tech) => (
 											<Badge key={tech} variant="secondary">
 												{tech}
