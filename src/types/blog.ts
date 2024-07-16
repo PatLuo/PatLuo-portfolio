@@ -1,7 +1,13 @@
-export interface BlogMetadata {
-  title: string;
-  description: string;
-  isPublished: boolean;
-  slug: string;
-  publishDate: string;
+export interface BlogCard {
+	title: string;
+	description: string;
+	currentSlug: string;
+	image: any;
+}
+
+export interface BlogPostContent {
+	title: string;
+	currentSlug: string;
+	image: any;
+	content: string;
 }
