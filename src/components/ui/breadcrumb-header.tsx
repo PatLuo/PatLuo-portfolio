@@ -9,6 +9,7 @@ import {
 	BreadcrumbPage,
 	BreadcrumbSeparator,
 } from "./breadcrumb";
+import { Fragment } from "react";
 
 export const BreadcrumbHeader = () => {
 	const paths: string = usePathname();
@@ -16,24 +17,24 @@ export const BreadcrumbHeader = () => {
 	return (
 		<Breadcrumb className="ml-8 lg:ml-0">
 			<BreadcrumbList>
-				<BreadcrumbItem>
+				<BreadcrumbItem key="home">
 					<BreadcrumbLink href="/">Home</BreadcrumbLink>
 				</BreadcrumbItem>
 				{pathNames.length != 0 && <BreadcrumbSeparator />}
 				{pathNames.map((path, index) => {
 					const isLast = index === pathNames.length - 1;
 					return (
-						<BreadcrumbItem key={index}>
-							{/* last breadcrumb item should not be clickable */}
-							{isLast ? (
-								<BreadcrumbPage>{path}</BreadcrumbPage>
-							) : (
-								<>
+						<Fragment key={index}>
+							<BreadcrumbItem>
+								{/* last breadcrumb item should not be clickable */}
+								{isLast ? (
+									<BreadcrumbPage>{path}</BreadcrumbPage>
+								) : (
 									<BreadcrumbLink href={`/${path}`}>{path}</BreadcrumbLink>
-									<BreadcrumbSeparator />
-								</>
-							)}
-						</BreadcrumbItem>
+								)}
+							</BreadcrumbItem>
+							{!isLast && <BreadcrumbSeparator />}
+						</Fragment>
 					);
 				})}
 			</BreadcrumbList>
