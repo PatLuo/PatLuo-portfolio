@@ -9,7 +9,8 @@ import { Button } from "@/components/ui/button";
 import { JSX, SVGProps } from "react";
 import { getJSONData } from "@/lib/serverUtils";
 import { ModeToggle } from "./mode-toggle";
-import { DialogTitle } from "@/components/ui/dialog";
+import { DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export default async function Navbar() {
 	const data = await getJSONData();
@@ -41,9 +42,12 @@ export default async function Navbar() {
 					</SheetTrigger>
 					<SheetContent side="right" className="w-[250px]">
 						<DialogTitle className="font-bold text-">Menu</DialogTitle>
+						<DialogDescription className="text-gray-600 dark:text-gray-400">
+							<VisuallyHidden.Root>Settings</VisuallyHidden.Root>
+						</DialogDescription>
 						<div className="grid gap-6 p-6">
-							{data.visual.navbar.links.map((item) => (
-								<SheetClose asChild>
+							{data.visual.navbar.links.map((item, index) => (
+								<SheetClose asChild key={index}>
 									<Link
 										href={item.path}
 										key={item.path}
