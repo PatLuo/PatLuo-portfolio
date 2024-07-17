@@ -9,5 +9,5 @@ export interface BlogPostContent {
 	title: string;
 	currentSlug: string;
 	image: any;
-	content: string;
+	content: any;
 }
