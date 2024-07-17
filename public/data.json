@@ -114,9 +114,9 @@
 			"title": "My Blog",
 			"description": "A personal blog site I made to learn about the headless CMS templating pattern. I write about my experiences and ideas usually relating to technology.",
 			"technologies": ["Typescript", "Next.js", "Headless CMS", "Tailwind"],
-			"live_url": "https://pricingbees.com",
+			"live_url": "/blog",
 			"code_repo_url": "https://pricingbees.com",
-			"cover": "/assets/ride-mapper.png"
+			"cover": "/assets/blog.png"
 		}
 	],
 

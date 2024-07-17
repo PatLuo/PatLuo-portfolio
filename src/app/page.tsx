@@ -50,7 +50,7 @@ export default async function Home() {
 								Hi, I&apos;m {data.personalInfo.name}
 							</h1>
 						</div>
-						<p className="max-w-[600px] lg:text-lg text-gray-500 dark:text-gray-400">
+						<p className="max-w-[600px] lg:text-lg text-gray-600 dark:text-gray-400">
 							{data.personalInfo.bio}
 						</p>
 
@@ -60,7 +60,6 @@ export default async function Home() {
 								<Button asChild className="pb-1">
 									<div>
 										<p>Visit My Blog</p>
-										<ExternalLinkIcon className="h-4 w-4 ml-1 " />
 									</div>
 								</Button>
 							</Link>
