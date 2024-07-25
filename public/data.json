@@ -68,10 +68,10 @@
 			],
 			"keyResponsibilities": [
 				"Contributed to design and development of a robust Python-based test framework(Robot), reducing manual testing effort by 40%.",
-				"Debugged and configured test stages of CI/CD pipeline, ensuring successful deployment of test automation scripts and automatic uploading of test results to Jira.",
+				"Debugged and configured test stages of GitLab CI/CD pipeline for automated deployment of test scripts and automatic test result uploads to Jira.",
 				"Worked closely with developers to identify, troubleshoot, and thoroughly document software defects.",
 				"Containerized test automation scripts using Docker and Kubernetes to ensure consistent test execution across different environments.",
-				"Wrote onboarding documentation for new team members to help them get up to speed with the project."
+				"Wrote onboarding documentation for new team members detailing the test suite structure and operation, allowing them to contribute sooner."
 			]
 		},
 		{
@@ -92,9 +92,9 @@
 			],
 			"keyResponsibilities": [
 				"Designed and built a full-stack web application that enabled FINTRAC analysts to search through and process transaction reports in a more streamlined manner.",
-				"Improved loading performance of large queries by implementing pagination and database indexing, reducing load times to under 1s compared to 1min+ on existing system.",
-				"Conducted meetings with clients(analysts) to gather requirements and thorougly understand their needs.",
-				"Integrated app into existing FINTRAC microservices architecture using RESTful APIs."
+				"Improved performance for large queries by implementing pagination and database indexing when retrieving transaction reports, which reduced average load time to less than 1sec compared to 1min+ on the existing system.",
+				"Integrated the application into existing FINTRAC microservices architecture using RESTful APIs, to allow for authentication/authorization (JWT), and database CRUD functionality.",
+				"Conducted meetings with clients (analysts) to perform requirement analysis, understand their workflows, and create wireframes to ensure the best UX. "
 			]
 		}
 	],
