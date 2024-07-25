@@ -102,12 +102,18 @@
 	"projects": [
 		{
 			"id": "1",
-			"title": "Ride Mapper",
+			"title": "RideViz",
 			"description": "A web application that maps out all of a users bike rides from the Strava API onto an interactive map for easy viewing and sharing.",
-			"technologies": ["Javascript", "React.js", "Leaflet", "Strava API"],
-			"live_url": "https://ride-mapper-54452.web.app/",
-			"code_repo_url": "https://github.com/PatLuo/ride-mapper",
-			"cover": "/assets/ride-mapper.png"
+			"technologies": [
+				"Typescript",
+				"Next.js",
+				"React.js",
+				"Leaflet",
+				"Strava API"
+			],
+			"live_url": "https://rideviz.vercel.app/",
+			"code_repo_url": "https://github.com/PatLuo/ride-viz",
+			"cover": "/assets/rideviz.png"
 		},
 		{
 			"id": "2",
