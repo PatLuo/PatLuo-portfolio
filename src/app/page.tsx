@@ -56,14 +56,6 @@ export default async function Home() {
 
 						{/* Contact links */}
 						<div className="space-x-4">
-							<Link href="/blog">
-								<Button asChild className="pb-1">
-									<div>
-										<p>Visit My Blog</p>
-									</div>
-								</Button>
-							</Link>
-
 							<Link
 								target="_blank"
 								href={data.contactInfo.github}
