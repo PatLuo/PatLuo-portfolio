@@ -13,10 +13,6 @@
 				{
 					"label": "Education",
 					"path": "/#education"
-				},
-				{
-					"label": "Blog",
-					"path": "/blog"
 				}
 			]
 		},
@@ -67,11 +63,10 @@
 				"Azure"
 			],
 			"keyResponsibilities": [
-				"Contributed to design and development of a robust Python-based test framework(Robot), reducing manual testing effort by 40%.",
-				"Debugged and configured test stages of GitLab CI/CD pipeline for automated deployment of test scripts and automatic test result uploads to Jira.",
-				"Worked closely with developers to identify, troubleshoot, and thoroughly document software defects.",
-				"Containerized test automation scripts using Docker and Kubernetes to ensure consistent test execution across different environments.",
-				"Wrote onboarding documentation for new team members detailing the test suite structure and operation, allowing them to contribute sooner."
+				"Contributed to the design and development of a robust automated test suite (Python, Robot Framework, Selenium), automating over 200 test cases and reducing manual testing efforts by 65% for each release cycle.",
+				"Configured test stages of Jenkins CI/CD pipeline for automated execution and integration of test results with Jira and X-ray Test Management. Implemented parallel execution, decreasing pipeline duration from 2hrs to 1hr.",
+				"Worked closely with developers to identify, troubleshoot, and thoroughly document software bugs, allowing for swift resolution.",
+				"Wrote onboarding documentation for new team members in Confluence wiki detailing the test suite structure and operation, allowing them to contribute sooner."
 			]
 		},
 		{
@@ -91,10 +86,23 @@
 				"Cypress"
 			],
 			"keyResponsibilities": [
-				"Designed and built a full-stack web application that enabled FINTRAC analysts to search through and process transaction reports in a more streamlined manner.",
-				"Improved performance for large queries by implementing pagination and database indexing when retrieving transaction reports, which reduced average load time to less than 1sec compared to 1min+ on the existing system.",
+				"Designed and built a full-stack web application (Vue.js, Node.js, Express, OracleDB, Cypress) to streamline transaction report processing for FINTRAC analysts, serving a team of 40+ users.",
 				"Integrated the application into existing FINTRAC microservices architecture using RESTful APIs, to allow for authentication/authorization (JWT), and database CRUD functionality.",
-				"Conducted meetings with clients (analysts) to perform requirement analysis, understand their workflows, and create wireframes to ensure the best UX. "
+				"Optimized load times of an essential component containing transaction reports by 10x through the implementation of pagination and database indexing, significantly enhancing user experience."
+			]
+		},
+		{
+			"id": "3",
+			"company": "Agriculture and Agri-Food Canada",
+			"companyWebsite": "https://agriculture.canada.ca/en",
+			"role": "Full Stack Developer",
+			"startDate": "Jan 2021",
+			"endDate": "Apr 2021 (Co-op)",
+			"technologies": ["C#", "ASP.NET", "Azure", "SQL Server", "Angular"],
+			"keyResponsibilities": [
+				"Developed and maintained microservices (C#, ASP.NET, Azure SQL) that enabled the grain lab to streamline data processing and efficiently manage large volumes of experiment data.",
+				"Improved network efficiency by migrating legacy microservices from REST APIs to gRPC and Protobufs, resulting in 8x faster response times, 50% decrease in data payload size, and significant cost savings on Azure.",
+				"Designed and implemented a new Quality Control Service and dashboard (Angular) to ensure the accuracy and reliability of grain analysis results. The service included automated quality checks and flagged erroneous results for manual review in the dashboard."
 			]
 		}
 	],
@@ -114,15 +122,6 @@
 			"live_url": "https://rideviz.vercel.app/",
 			"code_repo_url": "https://github.com/PatLuo/ride-viz",
 			"cover": "/assets/rideviz.png"
-		},
-		{
-			"id": "2",
-			"title": "My Blog",
-			"description": "A personal blog site I made to learn about the headless CMS templating pattern. I write about my experiences and ideas usually relating to technology.",
-			"technologies": ["Typescript", "Next.js", "Headless CMS", "Tailwind"],
-			"live_url": "/blog",
-			"code_repo_url": "https://pricingbees.com",
-			"cover": "/assets/blog.png"
 		}
 	],
 
