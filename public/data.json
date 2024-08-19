@@ -101,7 +101,7 @@
 			"technologies": ["C#", "ASP.NET", "Azure", "SQL Server", "Angular"],
 			"keyResponsibilities": [
 				"Developed and maintained microservices (C#, ASP.NET, Azure SQL) that enabled the grain lab to streamline data processing and efficiently manage large volumes of experiment data.",
-				"Improved network efficiency by migrating legacy microservices from REST APIs to gRPC and Protobufs, resulting in 8x faster response times, 50% decrease in data payload size, and significant cost savings on Azure.",
+				"Improved network efficiency by migrating legacy microservices from REST APIs to gRPC and Protobufs, resulting in 4x faster response times, 50% decrease in data payload size, and significant cost savings on Azure.",
 				"Designed and implemented a new Quality Control Service and dashboard (Angular) to ensure the accuracy and reliability of grain analysis results. The service included automated quality checks and flagged erroneous results for manual review in the dashboard."
 			]
 		}
